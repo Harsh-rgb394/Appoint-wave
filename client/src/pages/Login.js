@@ -23,6 +23,7 @@ function Login() {
       }
     } catch (error) {
       dispatch(hideLoading());
+      console.log(error);
       toast.error("Something went wrong");
     }
   };
