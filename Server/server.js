@@ -9,11 +9,7 @@ const doctorRoute = require("./routes/doctorsRoute");
 const cors=require("cors");
 // const path = require("path");
 
-app.use(cors({
-  origin:"http://localhost:3000",
-  methods:["POST","GET"],
-  credentials:false
-}))
+
 app.use("/api/user", userRoute);
 app.use("/api/admin", adminRoute);
 app.use("/api/doctor", doctorRoute);
