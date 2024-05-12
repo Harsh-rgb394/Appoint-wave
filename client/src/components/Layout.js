@@ -62,12 +62,7 @@ function Layout({ children }) {
       name: "Doctors",
       path: "/admin/doctorslist",
       icon: "ri-user-star-line",
-    },
-    {
-      name: "Profile",
-      path: "/profile",
-      icon: "ri-user-line",
-    },
+    }
   ];
 
   const menuToBeRendered = user?.isAdmin ? adminMenu : user?.isDoctor ? doctorMenu : userMenu;

@@ -74,6 +74,7 @@ function Profile() {
 
   useEffect(() => {
     getDoctorData();
+    console.log(doctor);
   }, []);
   return (
     <Layout>
